@@ -1,10 +1,12 @@
 # 忽略所有文件
 *
 
-# 只跟踪新闻简报文件夹和文件
+# 允许文件夹结构
 !*/
-!Daily_News_Brief_*.md
-!Real_News_Brief_*.md
+
+# 允许所有新闻简报文件（包括子文件夹中的）
+!**/Daily_News_Brief_*.md
+!**/Real_News_Brief_*.md
 
 # 必要的配置文件
 !.gitignore
