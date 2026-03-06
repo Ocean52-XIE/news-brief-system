@@ -1,10 +1,10 @@
-# 只跟踪新闻简报文件，忽略其他所有文件
+# 忽略所有文件
 *
 
-# 允许新闻简报文件
+# 只跟踪新闻简报文件
 !Daily_News_Brief_*.md
 !Real_News_Brief_*.md
 
-# 允许必要的配置文件
+# 必要的配置文件
 !.gitignore
 !README.md
