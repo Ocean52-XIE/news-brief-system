@@ -1,10 +1,23 @@
 # 忽略所有文件
 *
 
-# 只跟踪新闻简报文件
+# 只跟踪新闻简报文件夹和文件
+!*/
 !Daily_News_Brief_*.md
 !Real_News_Brief_*.md
 
 # 必要的配置文件
 !.gitignore
 !README.md
+
+# 本地脚本文件（不推送到GitHub）
+generate_optimized_news_brief.py
+push_news_only.sh
+news_brief_config.json
+setup_cron_non_interactive.sh
+organize_news_by_month.sh
+*.py
+*.sh
+*.json
+logs/
+memory/
