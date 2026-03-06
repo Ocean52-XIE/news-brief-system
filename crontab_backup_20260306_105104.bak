@@ -1,0 +1,10 @@
+
+# 新闻收集定时任务 - 每天0点、6点、12点、18点
+
+# 新闻收集定时任务 - 修复版（支持cron环境）
+# 新闻收集定时任务 - 修复版（包含GitHub推送）
+# 新闻收集定时任务 - 优化版（英文文件名 + 实时新闻）
+0 0 * * * /usr/bin/python3 /home/xieyq/.openclaw/workspace-news/auto_news_collector_optimized_english.py >> ~/news_optimized_english.log 2>&1
+0 6 * * * /usr/bin/python3 /home/xieyq/.openclaw/workspace-news/auto_news_collector_optimized_english.py >> ~/news_optimized_english.log 2>&1
+0 12 * * * /usr/bin/python3 /home/xieyq/.openclaw/workspace-news/auto_news_collector_optimized_english.py >> ~/news_optimized_english.log 2>&1
+0 18 * * * /usr/bin/python3 /home/xieyq/.openclaw/workspace-news/auto_news_collector_optimized_english.py >> ~/news_optimized_english.log 2>&1

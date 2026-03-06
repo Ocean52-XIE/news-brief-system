@@ -1,0 +1,12 @@
+# 新闻简报定时任务 - 优化版
+# 每天上午9:00生成早间简报
+0 9 * * * cd /home/xieyq/.openclaw/workspace-news && /usr/bin/python3 generate_optimized_news_brief.py >> /home/xieyq/.openclaw/workspace-news/logs/morning_$(date +\%Y\%m\%d).log 2>&1
+
+# 每天下午3:00生成午间更新
+0 15 * * * cd /home/xieyq/.openclaw/workspace-news && /usr/bin/python3 generate_optimized_news_brief.py >> /home/xieyq/.openclaw/workspace-news/logs/afternoon_$(date +\%Y\%m\%d).log 2>&1
+
+# 每天晚上9:00生成晚间总结
+0 21 * * * cd /home/xieyq/.openclaw/workspace-news && /usr/bin/python3 generate_optimized_news_brief.py >> /home/xieyq/.openclaw/workspace-news/logs/evening_$(date +\%Y\%m\%d).log 2>&1
+
+# 每周五下午6:00生成周度总结（预留）
+0 18 * * 5 cd /home/xieyq/.openclaw/workspace-news && echo '周度总结功能待实现' >> /home/xieyq/.openclaw/workspace-news/logs/weekly_$(date +\%Y\%m\%d).log 2>&1
